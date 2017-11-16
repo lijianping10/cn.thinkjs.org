@@ -980,6 +980,7 @@ ctx.post({name: 'value', name2: 'value2'}); //重新设置多个 POST 值
 
 ```js
 ctx.file('name'); //获取 FILE 值，如果不存在则返回 undefined
+应该是ctx.file.name;
 ctx.file(); //获取所有的 FILE 值，包含动态添加的数据
 ctx.file('name', value); //重新设置 FILE 值
 ctx.file({name: 'value', name2: 'value2'}); //重新设置多个 FILE 值
